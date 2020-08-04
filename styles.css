@@ -63,9 +63,8 @@ h1, h2 {
 
 #home {
     position: relative;
-    min-height: 100vh;
     background: url("./img/home_bg.png") 50% 50% no-repeat;
-    padding: 20px 0;
+    padding: 20px 0 300px;
 }
 
 .home-containers {
@@ -482,6 +481,15 @@ h1, h2 {
 }
 
 @media (max-width: 1024px) {
+    .wrapper {
+       padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #about .wrapper {
+        padding-bottom: 0;
+    }
+
     .photo-container .photo.photo-width-30 {
         width: 49%;
     }
@@ -498,9 +506,17 @@ h1, h2 {
 
     .card.card-container .card-body {
         padding: 30px 0;
+        width: 100%;
     }
 
-    .card-img, .card-body {
+    .card-img {
         width: 60%;
+    }
+}
+
+@media (max-width: 850px) {
+    .wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
