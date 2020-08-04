@@ -204,7 +204,7 @@ h1, h2 {
 }
 
 .room-info .list-item {
-    margin-bottom: 12px;
+    margin-bottom: 2px;
     display: flex;
     align-items: center;
 }
@@ -220,13 +220,14 @@ h1, h2 {
 .room-img {
     border-radius: 15px;
     background-position: 0;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .room-img-50 {
     width: 48%;
     max-width: 645px;
-    max-height: 388px;
+    min-height: 380px;
+    margin-bottom: 50px;
 }
 
 .room-img-30 {
