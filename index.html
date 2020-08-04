@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Отдых в Затоке. База отдыха</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
           rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
@@ -17,25 +19,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             crossorigin="anonymous"></script>
-    <script src="config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="application/javascript" src="./js/scroll.js"></script>
+    <script type="application/javascript" src="./js/config.js"></script>
 </head>
 <body>
 <section id="home">
     <div class="home-wrapper container-1320 container-white">
-        <ul class="home-containers nav-menu">
-            <li>
-                <a class="nav-menu-link" href="#about">О нас</a>
-            </li>
-            <li>
-                <a class="nav-menu-link" href="#rooms">Номера</a>
-            </li>
-            <li>
-                <a class="nav-menu-link" href="#photo-gallery">Фотогалерея</a>
-            </li>
-            <li>
-                <a class="nav-menu-link" href="#contacts">Расположение</a>
-            </li>
-        </ul>
+        <header>
+            <nav class="home-containers nav-menu">
+                <a class="nav-menu-link scroll-link" href="#about">О нас</a>
+                <a class="nav-menu-link scroll-link" href="#rooms">Номера</a>
+                <a class="nav-menu-link scroll-link" href="#photo-gallery">Фотогалерея</a>
+                <a class="nav-menu-link scroll-link" href="#contacts">Расположение</a>
+            </nav>
+        </header>
 
         <div class="home-containers title-container">
             <h1 id="title">НАЗВАНИЕ БАЗЫ ОТДЫХА</h1>
@@ -88,7 +86,8 @@
                             <article class="room-info">
                                 <h3 class="room-title">2-х местный эконом</h3>
                                 <p class="description">
-                                    Короткое описание номера: количество кроватей, на каком этаже находится, есть ли балкон, удобства, вход с улицы или с общего коридора, вид из окна и тому подобное.
+                                    Короткое описание номера: количество кроватей, на каком этаже находится, есть ли
+                                    балкон, удобства, вход с улицы или с общего коридора, вид из окна и тому подобное.
                                 </p>
                                 <ul>
                                     <li class="list-item">
@@ -113,12 +112,16 @@
                                     </li>
                                 </ul>
                             </article>
-                            <div class="room-img room-img-50" style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-50"
+                                 style="background-image: url('./img/room-example.png')"></div>
                         </div>
                         <div class="rooms-row">
-                            <div class="room-img room-img-30" style="background-image: url('./img/room-example.png')"></div>
-                            <div class="room-img room-img-30" style="background-image: url('./img/room-example.png')"></div>
-                            <div class="room-img room-img-30" style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-30"
+                                 style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-30"
+                                 style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-30"
+                                 style="background-image: url('./img/room-example.png')"></div>
                         </div>
                     </div>
                 </div>
@@ -128,7 +131,8 @@
                             <article class="room-info">
                                 <h3 class="room-title">2-х местный эконом</h3>
                                 <p class="description">
-                                    Короткое описание номера: количество кроватей, на каком этаже находится, есть ли балкон, удобства, вход с улицы или с общего коридора, вид из окна и тому подобное.
+                                    Короткое описание номера: количество кроватей, на каком этаже находится, есть ли
+                                    балкон, удобства, вход с улицы или с общего коридора, вид из окна и тому подобное.
                                 </p>
                                 <ul>
                                     <li class="list-item">
@@ -153,12 +157,16 @@
                                     </li>
                                 </ul>
                             </article>
-                            <div class="room-img room-img-50" style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-50"
+                                 style="background-image: url('./img/room-example.png')"></div>
                         </div>
                         <div class="rooms-row">
-                            <div class="room-img room-img-30" style="background-image: url('./img/room-example.png')"></div>
-                            <div class="room-img room-img-30" style="background-image: url('./img/room-example.png')"></div>
-                            <div class="room-img room-img-30" style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-30"
+                                 style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-30"
+                                 style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-30"
+                                 style="background-image: url('./img/room-example.png')"></div>
                         </div>
                     </div>
                 </div>
@@ -168,7 +176,8 @@
                             <article class="room-info">
                                 <h3 class="room-title">2-х местный эконом</h3>
                                 <p class="description">
-                                    Короткое описание номера: количество кроватей, на каком этаже находится, есть ли балкон, удобства, вход с улицы или с общего коридора, вид из окна и тому подобное.
+                                    Короткое описание номера: количество кроватей, на каком этаже находится, есть ли
+                                    балкон, удобства, вход с улицы или с общего коридора, вид из окна и тому подобное.
                                 </p>
                                 <ul>
                                     <li class="list-item">
@@ -193,12 +202,16 @@
                                     </li>
                                 </ul>
                             </article>
-                            <div class="room-img room-img-50" style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-50"
+                                 style="background-image: url('./img/room-example.png')"></div>
                         </div>
                         <div class="rooms-row">
-                            <div class="room-img room-img-30" style="background-image: url('./img/room-example.png')"></div>
-                            <div class="room-img room-img-30" style="background-image: url('./img/room-example.png')"></div>
-                            <div class="room-img room-img-30" style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-30"
+                                 style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-30"
+                                 style="background-image: url('./img/room-example.png')"></div>
+                            <div class="room-img room-img-30"
+                                 style="background-image: url('./img/room-example.png')"></div>
                         </div>
                     </div>
                 </div>
@@ -235,7 +248,8 @@
                 <p class="reviews-info">
                     Отдыхали вдвоем с мужем. Всё понравилось, в номере чисто, к морю недалеко.
 
-                    Отдельно можно отметить демократичную стоимость проживания и гостеприимство хозяев. С удовольствием будем рекомендовать это место знакомым!
+                    Отдельно можно отметить демократичную стоимость проживания и гостеприимство хозяев. С удовольствием
+                    будем рекомендовать это место знакомым!
                 </p>
             </article>
 
@@ -283,8 +297,8 @@
                 <img class="contacts-icon" src="img/place-icon.png" alt="place point">
                 <span class="contacts-type">Наш адрес:</span>
                 <p class="description">
-                    Одесская обл. Затока
-                    Улица, номер
+                    Одесская обл. Затока <br/>
+                    Улица Приморская, 68
                 </p>
             </div>
             <div class="contacts-card">
@@ -306,6 +320,7 @@
 <footer class="footer container-white">
     <span>© 2020 All rights reserved</span>
 </footer>
+<a href="#home-page" class="scrollup"></a>
 
 <script rel="script" src="script.js"></script>
 </body>

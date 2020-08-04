@@ -64,7 +64,7 @@ h1, h2 {
 #home {
     position: relative;
     background: url("./img/home_bg.png") 50% 50% no-repeat;
-    padding: 20px 0 300px;
+    padding-bottom: 300px;
 }
 
 .home-containers {
@@ -72,6 +72,7 @@ h1, h2 {
 }
 
 .nav-menu {
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -460,6 +461,28 @@ h1, h2 {
     top: 50%;
 }
 
+.scrollup {
+    width: 50px;
+    height: 60px;
+    opacity: 0.6;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    text-indent: -9999px;
+    background: url(./img/scrollup.png) no-repeat;
+    background-size: 100%;
+    transition: all 0.5s;
+}
+
+.scrollup:hover {
+    opacity: 1;
+}
+
+.active {
+
+}
+
 @media (max-width: 1200px) {
     .title-container #title {
         font-size: 5.5rem;
@@ -477,6 +500,10 @@ h1, h2 {
     .container-title {
         font-size: 3.8rem;
         line-height: 4rem;
+    }
+
+    .map-container {
+        padding-top: 120px;
     }
 }
 
@@ -512,11 +539,22 @@ h1, h2 {
     .card-img {
         width: 60%;
     }
+
+    .footer {
+        padding-top: 200px;
+    }
 }
 
 @media (max-width: 850px) {
     .wrapper {
         padding-left: 30px;
         padding-right: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
