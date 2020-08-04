@@ -188,7 +188,7 @@ h1, h2 {
 .room-info {
     padding-left: 30px;
     width: 43%;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .room-info .room-title {
@@ -198,12 +198,11 @@ h1, h2 {
 }
 
 .room-info .description {
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     text-align: justify;
 }
 
 .room-info .list-item {
-    margin-bottom: 2px;
     display: flex;
     align-items: center;
 }
