@@ -289,7 +289,87 @@ h1, h2 {
     opacity: 1;
 }
 
-#reviews {
+.slide1.photo-1 {
+    background-image: url('./img/room1/img1.png')
+}
+
+.slide1.photo-2 {
+    background-image: url('./img/room1/img2.png')
+}
+
+.slide1.photo-3 {
+    background-image: url('./img/room1/img3.png')
+}
+
+.slide1.photo-4 {
+    background-image: url('./img/room1/img4.png')
+}
+
+.slide2.photo-1 {
+    background-image: url('./img/room2/img1.png')
+}
+
+.slide2.photo-2 {
+    background-image: url('./img/room2/img2.png')
+}
+
+.slide2.photo-3 {
+    background-image: url('./img/room2/img3.png')
+}
+
+.slide2.photo-4 {
+    background-image: url('./img/room2/img4.png')
+}
+
+.slide3.photo-1 {
+    background-image: url('./img/room3/img1.png')
+}
+
+.slide3.photo-2 {
+    background-image: url('./img/room3/img2.png')
+}
+
+.slide3.photo-3 {
+    background-image: url('./img/room3/img3.png')
+}
+
+.slide3.photo-4 {
+    background-image: url('./img/room3/img4.png')
+}
+
+.slide4.photo-1 {
+    background-image: url('./img/room4/img1.png')
+}
+
+.slide4.photo-2 {
+    background-image: url('./img/room4/img2.png')
+}
+
+.slide4.photo-3 {
+    background-image: url('./img/room4/img3.png')
+}
+
+.slide4.photo-4 {
+    background-image: url('./img/room4/img4.png')
+}
+
+.slide5.photo-1 {
+    background-image: url('./img/room5/img1.png')
+}
+
+.slide5.photo-2 {
+    background-image: url('./img/room5/img2.png')
+}
+
+.slide5.photo-3 {
+    background-image: url('./img/room5/img3.png')
+}
+
+.slide5.photo-4 {
+    background-image: url('./img/room5/img4.png')
+}
+
+#comments {
     padding-bottom: 170px;
     background: url("./img/reviews_bg.png") 50% 0 no-repeat;
 }
@@ -299,14 +379,14 @@ h1, h2 {
     width: 100%;
 }
 
-.reviews-container {
+.comments-container {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     color: black;
 }
 
-.reviews-container .reviews-card {
+.comments-container .comments-card {
     width: 49%;
     padding: 30px;
     height: 288px;
@@ -315,40 +395,40 @@ h1, h2 {
     border-radius: 15px;
 }
 
-.reviews-card .card-title-row {
+.comments-card .card-title-row {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.reviews-card .card-title-row .card-img {
+.comments-card .card-title-row .card-img {
     width: 90px;
     height: 90px;
     border-radius: 50%;
 }
 
-.reviews-card .card-title-row .reviewer-container {
+.comments-card .card-title-row .commentator-container {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
 }
 
-.reviews-card .reviews-info {
+.comments-card .comment {
     font-size: 1.4rem;
     line-height: 1.7rem;;
 }
 
-.reviewer-container .reviewer-name {
+.commentator-container .commentator-name {
     font-size: 1.8rem;
     font-weight: 600;
 }
 
-.reviewer-container .reviewer-info {
+.commentator-container .commentator-info {
     margin-bottom: 5px;
     font-size: 1.4rem;
 }
 
-.reviewer-container .reviewer-date {
+.commentator-container .commentator-date {
     font-size: 1.2rem;
     color: #7F828A;
 }
@@ -379,35 +459,35 @@ h1, h2 {
 }
 
 .photo-container .photo.photo-1 {
-    background-image: url("./img/photo1.png");
+    background-image: url("./img/photo-gallery/photo1.png");
 }
 
 .photo-container .photo.photo-2 {
-    background-image: url("./img/photo2.png");
+    background-image: url("./img/photo-gallery/photo2.png");
 }
 
 .photo-container .photo.photo-3 {
-    background-image: url("./img/photo3.png");
+    background-image: url("./img/photo-gallery/photo3.png");
 }
 
 .photo-container .photo.photo-4 {
-    background-image: url("./img/photo4.png");
+    background-image: url("./img/photo-gallery/photo4.png");
 }
 
 .photo-container .photo.photo-5 {
-    background-image: url("./img/photo5.png");
+    background-image: url("./img/photo-gallery/photo5.png");
 }
 
 .photo-container .photo.photo-6 {
-    background-image: url("./img/photo6.png");
+    background-image: url("./img/photo-gallery/photo6.png");
 }
 
 .photo-container .photo.photo-7 {
-    background-image: url("./img/photo7.png");
+    background-image: url("./img/photo-gallery/photo7.png");
 }
 
 .photo-container .photo.photo-8 {
-    background-image: url("./img/photo8.png");
+    background-image: url("./img/photo-gallery/photo8.png");
 }
 
 .contacts-container {
