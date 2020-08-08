@@ -170,6 +170,7 @@ h1, h2 {
 .card-text {
     font-size: 1.8rem;
     text-align: justify;
+    margin-bottom: 10px;
 }
 
 .card-img, .card-body {
@@ -252,6 +253,15 @@ h1, h2 {
     height: 50px;
     background: #262B39;
     border-radius: 30px;
+    opacity: 1;
+}
+
+
+.carousel-control-prev:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+    background: #374053;
 }
 
 .carousel-control-next {
@@ -620,6 +630,10 @@ h1, h2 {
         padding-top: 200px;
     }
 
+    .scrollup {
+        width: 65px;
+        height: 75px;
+    }
 }
 
 @media (max-width: 850px) {
