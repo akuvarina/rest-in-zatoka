@@ -387,8 +387,8 @@ h1, h2 {
 
 .close.close-room-img {
   position: absolute;
-  font-size: 3.5rem;
-  right: -30px;
+  font-size: 4.5rem;
+  right: -50px;
   color: #b9aeae;
 }
 
@@ -666,6 +666,15 @@ h1, h2 {
     width: 65px;
     height: 75px;
   }
+
+  .modal-dialog.rooms-modal-dialog {
+    max-width: 85%;
+    margin-top: 35%;
+  }
+
+  .room-img.room-modal {
+    min-height: 540px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -699,6 +708,7 @@ h1, h2 {
   .footer {
     padding-top: 130px;
   }
+
 }
 
 @media (max-width: 700px) {
