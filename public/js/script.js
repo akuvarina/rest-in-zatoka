@@ -26,7 +26,6 @@ config.rooms.forEach((room, index) => {
     <div class="rooms-row">
     <article class="room-info">
     <h3 class="room-title">${title}</h3>
-    <span>Стоимость проживания: 300грн</span>
     <p class="description">${description}</p>
     <ul>${items}</ul>
     </article>

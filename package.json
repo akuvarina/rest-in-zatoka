@@ -1,0 +1,25 @@
+{
+  "name": "rest-in-zatoka",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akuvarina/rest-in-zatoka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akuvarina/rest-in-zatoka/issues"
+  },
+  "homepage": "https://github.com/akuvarina/rest-in-zatoka#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0"
+  },
+  "dependencies": {
+    "gulp-minify": "^3.1.0"
+  }
+}
