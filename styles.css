@@ -379,9 +379,27 @@ h1, h2 {
   background-image: url('./img/room5/img4.png')
 }
 
+.room-img.room-modal {
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+}
+
+.close.close-room-img {
+  position: absolute;
+  font-size: 3.5rem;
+  right: -30px;
+  color: #b9aeae;
+}
+
+.modal-dialog.rooms-modal-dialog {
+  max-width: 70%;
+  margin-top: 20%;
+}
+
 #comments {
   padding-bottom: 0;
-  background: url(./img/reviews_bg.png) 50% no-repeat;
+  background: url(./img/reviews_bg.png) no-repeat;
   background-size: cover;
 }
 

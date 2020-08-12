@@ -29,12 +29,32 @@ config.rooms.forEach((room, index) => {
     <p class="description">${description}</p>
     <ul>${items}</ul>
     </article>
-    <div class="room-img room-img-50 slide${slideNumber} photo-1"></div>
+    <div
+    class="room-img room-img-50 slide${slideNumber} photo-1"
+    data-target="#rooms-carousel-modal"
+    data-toggle="modal"
+    onclick="setImageToModal('slide${slideNumber} photo-1')"
+    ></div>
     </div>
     <div class="rooms-row">
-    <div class="room-img room-img-30 slide${slideNumber} photo-2"></div>
-    <div class="room-img room-img-30 slide${slideNumber} photo-3"></div>
-    <div class="room-img room-img-30 slide${slideNumber} photo-4"></div>
+    <div
+    class="room-img room-img-30 slide${slideNumber} photo-2"
+    data-target="#rooms-carousel-modal"
+    data-toggle="modal"
+    onclick="setImageToModal('slide${slideNumber} photo-2')"
+    ></div>
+    <div
+    class="room-img room-img-30 slide${slideNumber} photo-3"
+    data-target="#rooms-carousel-modal"
+    data-toggle="modal"
+    onclick="setImageToModal('slide${slideNumber} photo-3')"
+    ></div>
+    <div
+    class="room-img room-img-30 slide${slideNumber} photo-4"
+    data-target="#rooms-carousel-modal"
+    data-toggle="modal"
+    onclick="setImageToModal('slide${slideNumber} photo-4')"
+    ></div>
     </div>
     `;
 
@@ -80,3 +100,8 @@ const phonesEl = document.getElementById('contact-phones');
 
 phoneTypeEl.innerText = phoneNumbers.length > 1 ? phoneTypeTitles.several : phoneTypeTitles.single;
 phonesEl.innerHTML = phoneNumbers.join('<br/>');
+
+function setImageToModal(className) {
+  const imgEl = document.getElementById('modal-room');
+  imgEl.className = `room-img room-modal ${className}`;
+}

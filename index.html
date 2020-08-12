@@ -22,6 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="application/javascript" src="./js/scroll.js"></script>
     <script type="application/javascript" src="./js/config.js"></script>
+    <script type="application/javascript" src="./js/bootstrap-script.js"></script>
 </head>
 <body>
 <section id="home">
@@ -78,6 +79,19 @@
                 </a>
             </div>
         </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="rooms-carousel-modal">
+            <div class="modal-dialog rooms-modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close close-room-img" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <div id="modal-room" class="room-img room-img-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
 </section>
@@ -86,7 +100,6 @@
     <div class="wrapper container-1320 container-white">
         <h2 class="container-title">отзывы наших гостей</h2>
         <div class="container-1094 comments-container" id="comments-wrapper">
-
         </div>
     </div>
 </section>
