@@ -380,7 +380,7 @@ h1, h2 {
 }
 
 .room-img.room-modal {
-  min-height: 400px;
+  min-height: 430px;
   width: 100%;
   height: 100%;
 }
@@ -393,8 +393,8 @@ h1, h2 {
 }
 
 .modal-dialog.rooms-modal-dialog {
-  max-width: 70%;
-  margin-top: 20%;
+  max-width: 50%;
+  margin-top: 10%;
 }
 
 #comments {
@@ -619,9 +619,18 @@ h1, h2 {
   .map-container {
     padding-top: 120px;
   }
+
+  .modal-dialog.rooms-modal-dialog {
+    max-width: 65%;
+    margin-top: 10%;
+  }
+
+  .room-img.room-modal {
+    min-height: 450px;
+  }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .wrapper {
     padding-left: 30px;
     padding-right: 30px;
@@ -655,7 +664,7 @@ h1, h2 {
   }
 
   .card-img {
-    width: 60%;
+    width: 70%;
   }
 
   .footer {
@@ -669,7 +678,7 @@ h1, h2 {
 
   .modal-dialog.rooms-modal-dialog {
     max-width: 85%;
-    margin-top: 35%;
+    margin-top: 15%;
   }
 
   .room-img.room-modal {

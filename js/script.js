@@ -26,6 +26,7 @@ config.rooms.forEach((room, index) => {
     <div class="rooms-row">
     <article class="room-info">
     <h3 class="room-title">${title}</h3>
+    <span>Стоимость проживания: 300грн</span>
     <p class="description">${description}</p>
     <ul>${items}</ul>
     </article>
@@ -102,6 +103,7 @@ phoneTypeEl.innerText = phoneNumbers.length > 1 ? phoneTypeTitles.several : phon
 phonesEl.innerHTML = phoneNumbers.join('<br/>');
 
 function setImageToModal(className) {
+  const selector = className.split(' ').join('.');
   const imgEl = document.getElementById('modal-room');
   imgEl.className = `room-img room-modal ${className}`;
 }
