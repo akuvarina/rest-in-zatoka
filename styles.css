@@ -7,6 +7,7 @@ body {
   padding: 0;
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
+  background-color: #F4F9FA;
 }
 
 h1, h2, h3, section, p, ul {
@@ -166,6 +167,7 @@ h1, h2 {
   flex-direction: row;
   border: none;
   justify-content: space-between;
+  background: #F4F9FA;
 }
 
 .card-text {
@@ -770,6 +772,11 @@ h1, h2 {
 @media (max-width: 700px) {
   .home-containers {
     width: 70%;
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    width: 25%;
   }
 
   .title-container #title {
@@ -828,6 +835,19 @@ h1, h2 {
 
   .map-container .map-link {
     top: 95%;
+  }
+
+  .comments-container .comments-card{
+    width: 95%;
+  }
+
+  .photo-container {
+    justify-content: center;
+  }
+
+  .photo-container .photo.photo-width-30,
+  .photo-container .photo.photo-width-50 {
+    width: 85%;
   }
 }
 
