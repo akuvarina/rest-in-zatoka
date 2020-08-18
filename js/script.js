@@ -14,7 +14,7 @@ aboutTextEl.innerHTML = aboutText;
 // rooms section
 const roomsWrapper = document.getElementById('rooms-wrapper');
 config.rooms.forEach((room, index) => {
-  const {title, description, list} = room;
+  const {title, description, list, price} = room;
   const slideNumber = index + 1;
 
   let items = '';
@@ -26,6 +26,7 @@ config.rooms.forEach((room, index) => {
     <div class="rooms-row">
     <article class="room-info">
     <h3 class="room-title">${title}</h3>
+    <span class="room-price">Стоимость проживания: ${price} грн</span>
     <p class="description">${description}</p>
     <ul>${items}</ul>
     </article>
@@ -33,7 +34,7 @@ config.rooms.forEach((room, index) => {
     class="room-img room-img-50 slide${slideNumber} photo-1"
     data-target="#rooms-carousel-modal"
     data-toggle="modal"
-    onclick="setImageToModal('slide${slideNumber} photo-1')"
+    onclick="setImageToModal('room${slideNumber}/img1.png')"
     ></div>
     </div>
     <div class="rooms-row">
@@ -41,19 +42,19 @@ config.rooms.forEach((room, index) => {
     class="room-img room-img-30 slide${slideNumber} photo-2"
     data-target="#rooms-carousel-modal"
     data-toggle="modal"
-    onclick="setImageToModal('slide${slideNumber} photo-2')"
+    onclick="setImageToModal('room${slideNumber}/img2.png')"
     ></div>
     <div
     class="room-img room-img-30 slide${slideNumber} photo-3"
     data-target="#rooms-carousel-modal"
     data-toggle="modal"
-    onclick="setImageToModal('slide${slideNumber} photo-3')"
+    onclick="setImageToModal('room${slideNumber}/img3.png')"
     ></div>
     <div
     class="room-img room-img-30 slide${slideNumber} photo-4"
     data-target="#rooms-carousel-modal"
     data-toggle="modal"
-    onclick="setImageToModal('slide${slideNumber} photo-4')"
+    onclick="setImageToModal('room${slideNumber}/img4.png')"
     ></div>
     </div>
     `;
@@ -101,8 +102,7 @@ const phonesEl = document.getElementById('contact-phones');
 phoneTypeEl.innerText = phoneNumbers.length > 1 ? phoneTypeTitles.several : phoneTypeTitles.single;
 phonesEl.innerHTML = phoneNumbers.join('<br/>');
 
-function setImageToModal(className) {
-  const selector = className.split(' ').join('.');
+function setImageToModal(path) {
   const imgEl = document.getElementById('modal-room');
-  imgEl.className = `room-img room-modal ${className}`;
+  imgEl.setAttribute('src', `img/${path}`);
 }

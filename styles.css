@@ -158,6 +158,7 @@ h1, h2 {
   line-height: 5.9rem;
   margin-bottom: 50px;
   text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .card-container {
@@ -175,6 +176,7 @@ h1, h2 {
 
 .card-img, .card-body {
   width: 50%;
+  border-radius: 15px;
 }
 
 .card-body {
@@ -193,9 +195,15 @@ h1, h2 {
 }
 
 .room-info .room-title {
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   font-weight: 700;
   font-size: 2.4rem;
+}
+
+.room-info .room-price {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
 }
 
 .room-info .description {
@@ -216,6 +224,7 @@ h1, h2 {
   border-radius: 15px;
   background-position: 0;
   background-size: cover;
+  box-shadow: -2px -3px 8px rgba(38, 43,57, 0.25);
 }
 
 .room-img-50 {
@@ -394,12 +403,12 @@ h1, h2 {
 }
 
 .modal-dialog.rooms-modal-dialog {
-  max-width: 50%;
-  margin-top: 5%;
+  max-width: 600px;
+  margin-top: 7%;
 }
 
 #comments {
-  padding-bottom: 0;
+  padding-bottom: 80px;
   background: url(./img/reviews_bg.png) no-repeat;
   background-size: cover;
 }
@@ -576,6 +585,26 @@ h1, h2 {
   width: 100%;
 }
 
+.map-container .map-link .map-tips {
+  display: none;
+  position: absolute;
+  font-size: 2.4rem;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: rgba(0,0,0,0.55);
+  right: 0;
+  margin: auto;
+  color: #d2d2d2;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.map-container .map-link:hover > .map-tips {
+  display: inline-block;
+}
+
 .scrollup {
   width: 60px;
   height: 70px;
@@ -590,6 +619,11 @@ h1, h2 {
   transition: all 0.5s;
 }
 
+.modal-body {
+  display: flex;
+  justify-content: center;
+}
+
 .scrollup:hover {
   opacity: 1;
 }
@@ -602,7 +636,6 @@ h1, h2 {
   }
 
   .modal-dialog.rooms-modal-dialog {
-    max-width: 50%;
     margin-top: 10%;
   }
 }
@@ -631,7 +664,7 @@ h1, h2 {
   }
 
   .modal-dialog.rooms-modal-dialog {
-    max-width: 65%;
+    max-width: 45%;
     margin-top: 10%;
   }
 
@@ -708,6 +741,10 @@ h1, h2 {
   .wrapper {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  #comments {
+    padding-bottom: 0;
   }
 
   .comments-container {
